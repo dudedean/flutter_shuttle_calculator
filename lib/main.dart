@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shuttle_calculator/widgets/input_card.dart';
 
 void main() => runApp(MyApp());
 
@@ -93,85 +94,34 @@ class _ContentState extends State<Content> {
                     padding: kDefaultPadding,
                     child: Text('Hall Fees (RM)'),
                   ),
-                  Container(
-                    margin: EdgeInsets.only(left: 15, right: 15),
-                    child: TextField(
-                      controller: hallFees,
-                      keyboardType: TextInputType.numberWithOptions(),
-                      textAlign: TextAlign.center,
-                      decoration: InputDecoration(
-                        labelText: 'Hall Fees',
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(19.0),
-                          borderSide: BorderSide(color: Colors.white),
-                        ),
-                        hintText: '15.00',
-                      ),
-                    ),
-                  ),
+                  InputCard(
+                      textController: hallFees,
+                      labelText: 'Hall Fees',
+                      hintText: '15.00'),
                   Padding(
                     padding: kDefaultPadding,
                     child: Text('Number of Players'),
                   ),
-                  Container(
-                    margin: EdgeInsets.only(left: 15, right: 15),
-                    child: TextField(
-                      keyboardType: TextInputType.number,
-                      controller: numberOfPlayers,
-                      textAlign: TextAlign.center,
-                      decoration: InputDecoration(
-                        fillColor: Colors.white,
-                        labelText: 'Number of players',
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(19.0),
-                          borderSide: BorderSide(color: Colors.white),
-                        ),
-                        hintText: '10',
-                      ),
-                    ),
-                  ),
+                  InputCard(
+                      textController: numberOfPlayers,
+                      labelText: 'Number of Players',
+                      hintText: '10'),
                   Padding(
                     padding: kDefaultPadding,
                     child: Text('Price per Shuttle (RM)'),
                   ),
-                  Container(
-                    margin: EdgeInsets.only(left: 15, right: 15),
-                    child: TextField(
-                      keyboardType: TextInputType.numberWithOptions(),
-                      controller: pricePerShuttle,
-                      textAlign: TextAlign.center,
-                      decoration: InputDecoration(
-                        fillColor: Colors.white,
-                        labelText: 'Price per shuttle (RM)',
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(19.0),
-                          borderSide: BorderSide(color: Colors.white),
-                        ),
-                        hintText: '2.00',
-                      ),
-                    ),
-                  ),
+                  InputCard(
+                      textController: pricePerShuttle,
+                      labelText: 'Price per shuttlecock (RM)',
+                      hintText: '2.00'),
                   Padding(
                     padding: kDefaultPadding,
                     child: Text('Number of matches played'),
                   ),
-                  Container(
-                    margin: EdgeInsets.only(left: 15, right: 15),
-                    child: TextField(
-                      keyboardType: TextInputType.number,
-                      controller: numberOfMatches,
-                      textAlign: TextAlign.center,
-                      decoration: InputDecoration(
-                        fillColor: Colors.white,
-                        labelText: 'Number of matches played',
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(19.0),
-                          borderSide: BorderSide(color: Colors.white),
-                        ),
-                        hintText: '2',
-                      ),
-                    ),
-                  ),
+                  InputCard(
+                      textController: numberOfMatches,
+                      labelText: 'Number of matches played',
+                      hintText: '2'),
                 ],
               ),
             ),
