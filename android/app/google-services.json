@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "477023716358",
+    "firebase_url": "https://shuttlecalculator.firebaseio.com",
+    "project_id": "shuttlecalculator",
+    "storage_bucket": "shuttlecalculator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477023716358:android:ee515a8ac22ca3e7",
+        "android_client_info": {
+          "package_name": "com.dudedean.shuttle_calculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477023716358-ebtj2h3b6qa1vtnreiickq5g296rg88q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxB71WdaHLQ56hW4NCBFbc4wCr4Wf_bvo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "477023716358-ebtj2h3b6qa1vtnreiickq5g296rg88q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
